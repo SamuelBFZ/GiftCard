@@ -1,10 +1,6 @@
 package com.samuel.giftcard_activites.Giftcard;
 
 import java.time.LocalDate;
-
-import org.antlr.v4.runtime.misc.NotNull;
-
-import jakarta.persistence.Basic;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
