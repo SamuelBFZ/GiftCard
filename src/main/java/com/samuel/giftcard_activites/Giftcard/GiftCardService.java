@@ -1,5 +1,7 @@
 package com.samuel.giftcard_activites.Giftcard;
 
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 
 import lombok.RequiredArgsConstructor;
@@ -23,7 +25,10 @@ public class GiftCardService {
             throw new IllegalArgumentException("GiftCard with ID " + id + " does not exists");
         }
         giftCardRepo.deleteById(id);
-        ;
+    }
+
+    public List<GiftCard> getAllGiftCards(){
+        return giftCardRepo.findAll();
     }
 
 }
