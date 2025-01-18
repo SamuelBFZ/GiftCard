@@ -32,6 +32,6 @@ public class GiftCard {
     @CreatedDate
     private LocalDateTime createdDate;
 
-    @OneToMany(targetEntity = Activity.class, cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @OneToMany(targetEntity = Activity.class, cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "giftCard")
     private List<Activity> activities;
 }
